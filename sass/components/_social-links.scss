@@ -1,0 +1,32 @@
+.team__social-list {
+    @extend %flex-container;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+.team__social-links {
+    @extend %flex-container;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: var(--partner-icon);
+    background-color: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+        fill: var(--white-text-back-color);
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+  
+
+  
+.team__social-svg:hover,
+.team__social-svg:focus {
+    fill: var(--white-text-back-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
