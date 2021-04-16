@@ -1,47 +1,81 @@
-.what-we-do__img-what-we-do {
-    @extend %flex-container;
-}
-
 .what-we-do {
-    @extend %flex-container;
-    padding-bottom: 94px;
-    padding-top: 47px;
-    background-color: var(--white-text-back-color);
+    padding-top: calc(-1 * 94%);
 }
-
-.what-we-do__title-chapter {
-    margin-bottom: 50px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--title-text-color);
+  
+@media screen and (max-width: 1199px) {
+    .what-we-do {
+      display: none;
+    }
 }
-
+  
 .what-we-do__about-list-item {
     position: relative;
-    margin-right: 30px;
+    max-width: 370px;
+    margin-left: 30px;
+    flex-basis: calc(100% / 3);
 }
-
-.what-we-do__img-what-we-do:nth-child(3) {
-    margin-right: 0;
-}
-
+  
 .what-we-do__image-cover {
     position: absolute;
-    bottom: 0;
     left: 0;
-    @extend %flex-container;
-    align-items: center;
-    justify-content: center;
-    height: 70px;
+    bottom: 0;
     width: 100%;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.14;
+    text-align: center;
     background-color: rgba(47, 48, 58, 0.8);
     color: var(--white-text-back-color);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
 }
+  
+
+// .what-we-do__img-what-we-do {
+//     @extend %flex-container;
+// }
+
+// .what-we-do {
+//     @extend %flex-container;
+//     padding-bottom: 94px;
+//     padding-top: 47px;
+//     background-color: var(--white-text-back-color);
+// }
+
+// .what-we-do__title-chapter {
+//     margin-bottom: 50px;
+//     font-weight: 700;
+//     font-size: 36px;
+//     line-height: 1.16;
+//     text-align: center;
+//     letter-spacing: 0.03em;
+//     color: var(--title-text-color);
+// }
+
+// .what-we-do__about-list-item {
+//     position: relative;
+//     margin-right: 30px;
+// }
+
+// .what-we-do__img-what-we-do:nth-child(3) {
+//     margin-right: 0;
+// }
+
+// .what-we-do__image-cover {
+//     position: absolute;
+//     bottom: 0;
+//     left: 0;
+//     @extend %flex-container;
+//     align-items: center;
+//     justify-content: center;
+//     height: 70px;
+//     width: 100%;
+//     background-color: rgba(47, 48, 58, 0.8);
+//     color: var(--white-text-back-color);
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 1.16;
+//     letter-spacing: 0.03em;
+//     text-transform: uppercase;
+// }

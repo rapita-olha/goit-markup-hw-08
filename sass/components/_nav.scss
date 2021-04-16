@@ -47,6 +47,7 @@
                     background-color: var(--accent-color);
                     background-size: auto;
                     border-radius: 2px;
+                    transform: translateY(1px);
                 }
 
                 .auth-icon {
@@ -119,6 +120,7 @@
     align-items: center;
     margin-left: auto;
 }
+
 
 .auth-icon {
     margin-right: 10px;
