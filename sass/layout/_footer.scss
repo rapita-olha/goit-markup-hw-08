@@ -9,7 +9,7 @@
 }
   
 .footer-container {
-    @extend %flex-container;
+    display: flex;
     flex-direction: column;
     justify-content: center;
 }
@@ -88,8 +88,8 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
   
-.footer__footer-list .footer__logo-footer:hover,
-.footer__footer-list .footer__logo-footer:focus {
+.footer__footer-list:hover,
+.footer__footer-list:focus {
     color: var(--accent-color);
 }
 
