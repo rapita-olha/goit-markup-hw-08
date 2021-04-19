@@ -103,7 +103,13 @@
         margin-right: 8px;
     }
 }
-  
+
+@media screen and (max-width: 767px) {
+    .modal-form-check-desc {
+        width: 100%;
+    }
+}
+
 .modal-form-link {
     color: var(--accent-color);
 }

@@ -1234,7 +1234,6 @@ button {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   margin-right: 12px;
-  margin-top: 20px;
   margin-bottom: 20px;
   background-color: transparent;
   color: var(--white-text-back-color);
