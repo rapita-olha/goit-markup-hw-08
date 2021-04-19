@@ -73,7 +73,7 @@
     color: var(--accent-color);
 }
 
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 479px) {
     .footer .footer-container, 
     .footer__footer-input-text,
     .footer__footer-form-title,
@@ -142,7 +142,15 @@
       margin-bottom: 9px;
     }
 }
-  
+
+@media screen and (min-width: 1200px) {
+    .footer__footer-form {
+        align-items: baseline;
+        justify-content: center;
+        margin-left: 109px;
+    }
+
+}
 
 
 .footer {
@@ -210,11 +218,6 @@
     margin-right: 10px;
 }
 
-.footer__footer-form {
-    align-items: baseline;
-    justify-content: center;
-    margin-left: 109px;
-}
   
 .footer__footer-form-title {
     font-weight: 700;
