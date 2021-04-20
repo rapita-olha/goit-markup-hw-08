@@ -41,7 +41,7 @@
   overflow: hidden;
 }
 
-.team__social-list, .team__social-links, .modal-close, .modal-form, .modal-form-check-desc, .team__description, .partners__partners-list, .footer__footer-social-list, .footer__footer-social-links, .footer__footer-input-text::placeholder, .portfolio__filter-btn-list {
+.team__social-list, .team__social-links, .modal-close, .modal-form, .partners__partners-list, .footer__footer-social-list, .footer__footer-social-links, .footer__footer-input-text::placeholder, .portfolio__filter-btn-list {
   display: flex;
 }
 
@@ -496,9 +496,11 @@ button {
 }
 
 .modal-form-check-desc {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   font-size: 14px;
-  margin-left: 12px;
   font-weight: 400;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -515,6 +517,13 @@ button {
   border-radius: 2px;
   cursor: pointer;
   margin-right: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .modal-form-check-desc {
+    align-items: center;
+    width: 100%;
+  }
 }
 
 .modal-form-link {
@@ -965,8 +974,7 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 30px;
-  padding-bottom: 24px;
+  padding: 30px;
   border-radius: 0px 0px 4px 4px;
 }
 

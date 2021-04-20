@@ -82,10 +82,11 @@
 }
   
 .modal-form-check-desc {
-    @extend %flex-container;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     font-size: 14px;
-    margin-left: 12px;
     font-weight: 400;
     line-height: 1.7;
     letter-spacing: 0.03em;
@@ -106,6 +107,7 @@
 
 @media screen and (max-width: 767px) {
     .modal-form-check-desc {
+        align-items: center;
         width: 100%;
     }
 }
